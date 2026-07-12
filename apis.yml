@@ -96,6 +96,8 @@ apis:
       - Wrap an existing WSGI application without rewriting handlers
       - Customize the middleware stack for a specific deployment
 common:
+  - type: DomainSecurity
+    url: security/connexion-domain-security.yml
   - type: Website
     url: https://connexion.readthedocs.io/
   - type: Documentation
@@ -112,6 +114,8 @@ common:
     url: https://github.com/spec-first/connexion/blob/main/LICENSE
   - type: PyPI
     url: https://pypi.org/project/connexion/
+  - url: https://github.com/spec-first/connexion/releases.atom
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
