@@ -12,6 +12,17 @@ description: >-
   integration. Connexion takes a contract-first, design-first approach: the
   OpenAPI specification is the source of truth and Python handlers are
   resolved from operationId or via configurable resolvers.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
