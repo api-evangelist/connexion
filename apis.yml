@@ -13,15 +13,20 @@ description: >-
   OpenAPI specification is the source of truth and Python handlers are
   resolved from operationId or via configurable resolvers.
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: self-hosted
+  license: Apache-2.0
+  license_evidence:
+    repo: spec-first/connexion
+    spdx: Apache-2.0
+    stars: 4612
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: medium
   source:
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -36,6 +41,9 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/connexion.png
+x-docs-platform: swagger-ui
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-24
 tags:
   - API Design
   - ASGI
@@ -59,7 +67,6 @@ apis:
       response validation against the specification, with first-class
       support for security schemes and Swagger UI.
     humanURL: https://connexion.readthedocs.io/en/latest/
-    baseURL: https://connexion.readthedocs.io
     tags:
       - Framework
       - OpenAPI
@@ -100,7 +107,6 @@ apis:
       propagation. The middleware stack can be applied to any ASGI or
       WSGI application via ConnexionMiddleware.
     humanURL: https://connexion.readthedocs.io/en/latest/middleware.html
-    baseURL: https://connexion.readthedocs.io
     tags:
       - ASGI
       - Middleware
