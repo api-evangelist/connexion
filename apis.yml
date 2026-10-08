@@ -126,6 +126,12 @@ apis:
       - Wrap an existing WSGI application without rewriting handlers
       - Customize the middleware stack for a specific deployment
 common:
+  - type: Plans
+    url: plans/connexion-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/connexion-rate-limits.yml
+  - type: FinOps
+    url: finops/connexion-finops.yml
   - type: DomainSecurity
     url: security/connexion-domain-security.yml
   - type: Website
