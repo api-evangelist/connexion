@@ -64,57 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Connexion is an open source Python framework that automatically handles HTTP requests based on OpenAPI specifications. Connexion 3 provides AsyncApp, FlaskApp, and ConnexionMiddleware as primary entry points, with built-in routing, request and response validation, parameter parsing, security enforcement, content negotiation, error handling, and Swagger UI integration.
+Connexion is an open source Python framework that automatically handles HTTP requests based on OpenAPI specifications. Connexion 3 provides AsyncApp, FlaskApp, and ConnexionMiddleware as primary entry points, with built-in routing, request and response validation, parameter parsing, security enforcement, content negotiation, error handling, lifespan, and Swagger UI integration. Connexion takes a contract-first, design-first approach: the OpenAPI specification is the source of truth and Python handlers are resolved from operationId or via configurable resolvers.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/connexion/refs/heads/main/apis.yml)
+**Areas:** API Design · ASGI · Design-First · Developer Tools · Flask · OpenAPI · Python · Validation · WSGI
 
-## Tags
+## Connexion on APIs.io
 
-- API Design, ASGI, Design-First, Flask, OpenAPI, Python, Validation, WSGI
+Everything profiled for Connexion is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/connexion/](https://apis.io/providers/connexion/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (2)
 
-- **Created:** 2026-03-25
-- **Modified:** 2026-04-28
+- [Connexion Python Framework](https://apis.io/apis/connexion/framework/) — Connexion is a contract-first Python web framework that loads an OpenAPI specification and routes requests to Python handlers based on operationId. It…
+- [Connexion Middleware Stack](https://apis.io/apis/connexion/middleware/) — Connexion 3 introduces a stack of pluggable ASGI middlewares that handle exceptions, server errors, lifespan, security, routing, request validation,…
 
-## APIs
+### Published properties
 
-### Connexion Python Framework
-A contract-first Python web framework that loads an OpenAPI specification and routes requests to Python handlers based on operationId. Performs request validation, parameter parsing, and response validation against the spec.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-**Human URL:** [https://connexion.readthedocs.io/en/latest/](https://connexion.readthedocs.io/en/latest/)
+#### Security (1)
 
-#### Tags
-- Framework, OpenAPI, Python, Validation
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Properties
-- [Documentation](https://connexion.readthedocs.io/en/latest/)
-- [Quickstart](https://connexion.readthedocs.io/en/latest/quickstart.html)
-- [GitHubRepository](https://github.com/spec-first/connexion)
-- [License](https://github.com/spec-first/connexion/blob/main/LICENSE)
-- [Issue Tracker](https://github.com/spec-first/connexion/issues)
+- [Connexion Domain Security](https://apis.io/security/connexion/connexion-domain-security/)
 
-### Connexion Middleware Stack
-Connexion 3 introduces a stack of pluggable ASGI middlewares for exceptions, server errors, lifespan, security, routing, request and response validation, Swagger UI, and context propagation.
+#### Plans and pricing (1)
 
-**Human URL:** [Connexion middleware](https://connexion.readthedocs.io/en/latest/middleware.html)
+Published plans, tiers and prices.
 
-#### Tags
-- ASGI, Middleware, WSGI
+- [Connexion Plans Pricing](https://apis.io/plans/connexion/connexion-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
+
+Published request limits.
+
+- [Connexion Rate Limits](https://apis.io/rate-limits/connexion/connexion-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Connexion Finops](https://apis.io/finops/connexion/connexion-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://connexion.readthedocs.io/)
-- [Quickstart](https://connexion.readthedocs.io/en/latest/quickstart.html)
-- [GitHubRepository](https://github.com/spec-first/connexion)
-- [GitHub Organization](https://github.com/spec-first)
-- [Issue Tracker](https://github.com/spec-first/connexion/issues)
-- [Change Log](https://github.com/spec-first/connexion/releases)
-- [License](https://github.com/spec-first/connexion/blob/main/LICENSE)
-- [PyPI](https://pypi.org/project/connexion/)
+- [Documentation](https://connexion.readthedocs.io/en/latest/quickstart.html)
+- [Changelog](https://github.com/spec-first/connexion/releases)
+- [Blog](https://github.com/spec-first/connexion/releases.atom)
+- [GitHub](https://github.com/spec-first)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 13.1** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/connexion/](https://apis.io/providers/connexion/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Connexion: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/connexion/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
